@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Rosalia Labs</title>
-  <meta name="description" content="Open infrastructure for environmental sensing. Rosalia Labs develops SensOS, an OS overlay for orchestrating Raspberry Pi fleets for research and field deployments." />
+  <meta name="description" content="Rosalia Labs builds open tools and methods at the intersection of computing and science — applied AI, modeling, and reproducible infrastructure for research and field deployments. Our flagship open-source project is SensOS." />
   <meta property="og:title" content="Rosalia Labs" />
-  <meta property="og:description" content="Open infrastructure for environmental sensing." />
+  <meta property="og:description" content="Open tools for research and discovery." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.rosalialabs.com/" />
   <meta name="theme-color" content="#0f172a" />
@@ -65,6 +65,8 @@
     .row h4 { margin: 0 0 6px; font-size: 16px; }
     .row p { margin: 0; color: var(--muted); font-size: 14px; }
 
+    .section-title { margin: 6px 0 12px; font-size: 18px; letter-spacing: .2px; }
+
     footer { margin: 56px 0 12px; color: var(--muted); font-size: 13px; display:flex; justify-content:space-between; gap: 12px; flex-wrap: wrap; }
     footer a { color: var(--muted); }
 
@@ -79,10 +81,8 @@
     "@type": "Organization",
     "name": "Rosalia Labs",
     "url": "https://www.rosalialabs.com/",
-    "sameAs": [
-      "https://github.com/Rosalia-Labs"
-    ],
-    "description": "Open infrastructure for environmental sensing. Developers of SensOS, an OS overlay for orchestrating Raspberry Pi fleets."
+    "sameAs": ["https://github.com/Rosalia-Labs"],
+    "description": "Open tools and methods at the intersection of computing and science. Developers of SensOS, an OS overlay for orchestrating Raspberry Pi fleets."
   }
   </script>
 </head>
@@ -101,12 +101,12 @@
 
     <section class="hero">
       <div class="panel">
-        <span class="kicker">Open infrastructure</span>
-        <h2>Environmental sensing, done right.</h2>
-        <p>Rosalia Labs builds open tools for orchestrating Raspberry&nbsp;Pi–based systems for research and field deployments. Our flagship project is <strong>SensOS</strong>, an OS overlay that extends the official Raspberry Pi OS build system with additional stages for robust, scalable deployments.</p>
+        <span class="kicker">Open tools for research</span>
+        <h2>Building infrastructure for hard problems.</h2>
+        <p>Rosalia Labs develops open tools and methods at the intersection of computing and science. We help researchers and practitioners turn messy data into insight — from applied <strong>AI & modeling</strong> to <strong>reproducible deployments</strong> in the field and lab. Our flagship open-source project is <strong>SensOS</strong>, a Raspberry&nbsp;Pi OS overlay for scalable, fault-tolerant imaging and sensing systems.</p>
         <div class="cta">
-          <a class="btn primary" href="https://github.com/Rosalia-Labs/SensOS">View SensOS on GitHub</a>
-          <a class="btn secondary" href="https://github.com/Rosalia-Labs">Explore the Org</a>
+          <a class="btn primary" href="https://github.com/Rosalia-Labs/SensOS">Explore SensOS</a>
+          <a class="btn secondary" href="https://github.com/Rosalia-Labs">See our work</a>
         </div>
         <div style="margin-top:16px">
           <span class="pill" title="Project status">
@@ -115,28 +115,28 @@
           </span>
         </div>
       </div>
-      <div class="aside card">
-        <div class="kicker" style="margin-bottom:10px">What we do</div>
+      <div class="aside card" aria-labelledby="what-we-do">
+        <div id="what-we-do" class="kicker" style="margin-bottom:10px">What we do</div>
         <div class="list">
           <div class="row">
-            <div class="icon">🧩</div>
+            <div class="icon" aria-hidden="true">🧩</div>
             <div>
-              <h4>OS overlay for Pi fleets</h4>
-              <p>Extend Raspberry Pi OS builds with reproducible stages for lab and field deployments.</p>
+              <h4>Computational infrastructure</h4>
+              <p>Reproducible tooling and systems for experiments and deployments (e.g., SensOS for Raspberry&nbsp;Pi fleets).</p>
             </div>
           </div>
           <div class="row">
-            <div class="icon">🌱</div>
+            <div class="icon" aria-hidden="true">📊</div>
             <div>
-              <h4>Built for ecology</h4>
-              <p>Designed for environmental sensing, biodiversity monitoring, and conservation research.</p>
+              <h4>Applied modeling & AI</h4>
+              <p>From statistical inference to ML pipelines that make predictions explainable and actionable.</p>
             </div>
           </div>
           <div class="row">
-            <div class="icon">🛠️</div>
+            <div class="icon" aria-hidden="true">🧪</div>
             <div>
-              <h4>Practical tooling</h4>
-              <p>Scripts and workflows to generate configs and bootable images with minimal friction.</p>
+              <h4>Field & lab workflows</h4>
+              <p>Designing practical data collection, QC, and processing for biodiversity, ecology, and beyond.</p>
             </div>
           </div>
         </div>
@@ -145,7 +145,27 @@
 
     <section class="grid" style="margin-top: 18px;">
       <div class="card" style="grid-column: span 12;">
-        <h3 style="margin-top:0">Get started</h3>
+        <h3 class="section-title" style="margin-top:0">Ways we can help</h3>
+        <div class="grid" style="grid-template-columns: repeat(12, 1fr); gap: 16px;">
+          <div class="card" style="grid-column: span 4;">
+            <h4 style="margin:8px 0 6px">Make results reproducible</h4>
+            <p style="margin:0;color:var(--muted);font-size:14px">Package models, data, and environments so others (and future you) can rerun them without surprises.</p>
+          </div>
+          <div class="card" style="grid-column: span 4;">
+            <h4 style="margin:8px 0 6px">Turn signals into decisions</h4>
+            <p style="margin:0;color:var(--muted);font-size:14px">Design analyses and ML that translate raw measurements into interpretable, decision-ready outputs.</p>
+          </div>
+          <div class="card" style="grid-column: span 4;">
+            <h4 style="margin:8px 0 6px">Ship robust systems</h4>
+            <p style="margin:0;color:var(--muted);font-size:14px">From single devices to fleets — build-and-deploy workflows with monitoring, logging, and graceful recovery.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid" style="margin-top: 18px;">
+      <div class="card" style="grid-column: span 12;">
+        <h3 class="section-title" style="margin-top:0">Open-source highlight: SensOS</h3>
         <p>Clone SensOS and initialize its submodules:</p>
         <pre style="background:#0a1024;border:1px solid #1b2650;padding:14px;border-radius:12px;overflow:auto;"><code>git clone --recurse-submodules https://github.com/Rosalia-Labs/SensOS.git
 cd SensOS
